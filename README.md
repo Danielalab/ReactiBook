@@ -1,7 +1,7 @@
 # REACTIBOOK
 Para la realización de este proyecto se hizo uso de React y Firebase , podiendo replicar una zona de posts públicos y privados como el newsFeed de Facebook.
 
-![Sin titulo](https://user-images.githubusercontent.com/32286663/36440425-aaf9af6e-163d-11e8-984c-4f9584a6a8c7.png)
+![Sin titulo](https://user-images.githubusercontent.com/32286663/38839300-97d1a72e-419f-11e8-85e1-5707830b79d4.png)
 
 ## Desarrollado para [Laboratoria](http://laboratoria.la) 
 
