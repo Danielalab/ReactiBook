@@ -27,8 +27,6 @@ const mapDispatchToProps = (dispatch) => ({
         const { key } = post;
         posts.push({key, ... post.val()})
       })
-      console.log(posts)
-      
       dispatch(getPublicPosts(posts))      
     })
   },

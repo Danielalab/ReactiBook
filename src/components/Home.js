@@ -16,21 +16,21 @@ class Home extends Component {
     let posts;
     let publicPosts;
     if (allUserPosts) {
-      posts = allUserPosts.reverse().map( post => (
+      posts = allUserPosts.map( post => (
         <Post key={post.key} img={post.img} text={post.text} 
           id={post.key} uid={post.uid} email={post.email} editUserPost={editUserPost} 
           refPublic={post.refPublic} refPrivate={post.refPrivate}
           edit={edit} user={user} 
         />
-      ))
+      )).reverse()
     }
     if (allPublicPosts) {
-      publicPosts = allPublicPosts.reverse().map( post => { 
+      publicPosts = allPublicPosts.map( post => { 
         return <Post user={user} key={post.key} img={post.img} 
         text={post.text} id={post.key} uid={post.uid} email={post.email}
         refPublic={post.refPublic} refPrivate={post.refPrivate}
         editUserPost={editUserPost} edit={edit}/>
-      })
+      }).reverse()
     }
     return (
       <div className="container-fluid">

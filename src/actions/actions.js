@@ -6,6 +6,7 @@ export const actionTypes = {
   ADD_POST: 'ADD_POST',
   EDIT_POST: 'EDIT_POST',
   UPDATE_POST: 'UPDATE_POST',
+  DELETE_POST: 'DELETE_POST',
   GET_ALL_USER_POSTS: 'GET_ALL_USER_POSTS',
   GET_PUBLIC_POSTS: 'GET_PUBLIC_POSTS',
   NAVIGATE_TO: 'NAVIGATE_TO',
@@ -44,6 +45,10 @@ export const editPost = (id) => ({
 
 export const updatePost = () => ({
   type: actionTypes.UPDATE_POST,
+})
+
+export const deletePost = () => ({
+  type: actionTypes.DELETE_POST,
 })
 
 export const getAllUserPosts = (posts) => ({

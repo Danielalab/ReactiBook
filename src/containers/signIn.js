@@ -9,7 +9,6 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   userSignIn : (email, password) => {
-    console.log(email, password);
     let errorSignIn = '';
     firebaseApp.auth().signInWithEmailAndPassword(email, password)
       .catch(error => {

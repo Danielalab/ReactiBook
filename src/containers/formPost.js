@@ -5,13 +5,15 @@ import FormPost from '../components/formPost';
 
 const mapDispatchToProps = (dispatch) => ({
   addPost : (uid, objPost, category) => {
-    objPost.uid = uid
-    objPost.refPrivate = firebaseDataBase.ref().child('users/' + uid + '/posts/').push().key;
-    objPost.refPublic = firebaseDataBase.ref().child('postsPublic/').push().key
+    objPost.uid = uid;
+    let newPostRef = firebaseDataBase.ref('users/' + uid + '/posts/').push();
+    objPost.refPrivate = newPostRef.key
+    newPostRef.set(objPost);
     if (category === 'public') {
-      firebaseDataBase.ref('postsPublic/').push(objPost)
-    }
-    firebaseDataBase.ref('users/' + uid + '/posts/').push(objPost)
+      let newPostPublicRef = firebaseDataBase.ref('postsPublic/').push();
+      objPost.refPublic = newPostPublicRef.key
+      newPostPublicRef.set(objPost);
+    } 
     dispatch(addPost())
   },
 })
