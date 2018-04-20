@@ -23,7 +23,7 @@ Las tecnologías que se usaron para crear Reactibook web son:
 - Mejorar la interfaz UI de la app. 
 
 ### BUGS:  
-- Al momento de editar un post, no se muestra el texto anterior. (Solucionado el 18/04/2018)
+- Al momento de editar un post, no se muestra el texto anterior.
 - Al momento de guardar un post editado se crea otro post con el texto antiguo. (Solucionado el 18/04/2018)
 
 Desarrolladora: 
