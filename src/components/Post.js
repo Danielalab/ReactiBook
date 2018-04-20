@@ -17,7 +17,7 @@ const Post = ({
             <div className="form-group row">
               <div className="col">
                 <textarea  className="form-control" 
-                  /* value={text ? text : ''}  */
+                  value={text ? text : ''}
                   onChange={(event)=> newText = event.target.value}
                 ></textarea>
               </div>
